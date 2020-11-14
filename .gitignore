@@ -1,0 +1,6 @@
+# Do not import any classes
+.class
+
+# No input/output files
+input.txt
+output.txt
