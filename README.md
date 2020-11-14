@@ -1,2 +1,2 @@
 # 1-term-KT
-All homeworks, labs etc.
+I'm studying on KT M3134 and here are all my homeworks, labs and etc.
