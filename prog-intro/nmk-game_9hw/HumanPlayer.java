@@ -1,4 +1,4 @@
-package n_m_k_game;
+package game;
 
 import java.io.PrintStream;
 import java.util.Scanner;

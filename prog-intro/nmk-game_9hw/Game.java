@@ -1,4 +1,4 @@
-package n_m_k_game;
+package game;
 
 public class Game {
     private final Player player1, player2;
@@ -25,8 +25,6 @@ public class Game {
     private int move(final Board board, final Player player, final int no) {
         final Move move = player.move(board.getPosition(), board.getCell());
         final Result result = board.makeMove(move);
-        //log("n_m_k_game.Player " + no + " move: " + move);
-        //log("Current position: \n" + board);
         if (result == Result.WIN) {
             return no;
         } else if (result == Result.LOSE) {
@@ -34,7 +32,6 @@ public class Game {
         } else if (result == Result.DRAW) {
             return 3;
         } else if (result == Result.UNKNOWN) {
-            //log("Next turn: ");
             return 0;
         } else {
             throw new AssertionError("Impossible");

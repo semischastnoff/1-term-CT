@@ -1,4 +1,4 @@
-package n_m_k_game;
+package game;
 
 public class SequentialPlayer implements Player {
     private final int n, m;
@@ -14,8 +14,8 @@ public class SequentialPlayer implements Player {
             for (int c = 0; c < m; c++) {
                 final Move move = new Move(r, c, cell);
                 if (position.isValid(move)) {
-                    System.out.println("Computer's sequential move: ");
-                    System.out.println("row=" + r + " col=" + c);
+                    //System.out.println("Computer's sequential move: ");
+                    //System.out.println("row=" + r + " col=" + c);
                     return move;
                 }
             }

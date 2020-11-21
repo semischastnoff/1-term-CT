@@ -1,4 +1,4 @@
-package n_m_k_game;
+package game;
 
 import java.util.Arrays;
 import java.util.Map;
@@ -43,7 +43,7 @@ public class NMKBoard implements Board, Position {
 
         cells[move.getRow()][move.getColumn()] = move.getValue();
 
-        if (checkCol() || checkRow()) {
+        if (checkCol()) {
             return Result.WIN;
         }
 
@@ -74,33 +74,22 @@ public class NMKBoard implements Board, Position {
     private boolean checkCol() {
         for (int r = 0; r < n; r++) {
             int cntCol = 0;
+            int cntRow = 0;
             if (cells[r][0] == turn) {
                 cntCol++;
+            }
+            if (r < m && cells[0][r] == turn) {
+                cntRow++;
             }
             for (int c = 1; c < m; c++) {
                 if (cells[r][c] == turn && (cells[r][c - 1] == turn || cells[r][c - 1] == Cell.E)) {
                     cntCol++;
                 }
-            }
-            if (cntCol == k) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    private boolean checkRow() {
-        for (int c = 0; c < m; c++) {
-            int cntRow = 0;
-            if (cells[0][c] == turn) {
-                cntRow++;
-            }
-            for (int r = 1; r < n; r++) {
-                if (cells[r][c] == turn && (cells[r - 1][c] == turn || cells[r - 1][c] == Cell.E)) {
+                if (c < n && r < m && cells[c][r] == turn && (cells[c - 1][r] == turn || cells[c - 1][r] == Cell.E)) {
                     cntRow++;
                 }
             }
-            if (cntRow == k) {
+            if (cntCol == k || cntRow == k) {
                 return true;
             }
         }

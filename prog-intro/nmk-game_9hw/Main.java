@@ -1,16 +1,22 @@
-package n_m_k_game;
+package game;
 
-import java.util.Map;
 import java.util.Scanner;
 
-
 public class Main {
-    private static final Map<Integer, Character> RES = Map.of(1, 'X', 2, 'O');
+    protected static int[] ans;
+    protected static int numberOfPlayers;
+    protected static int n, m, k;
 
     public static void main(String[] args) {
         //input
         Scanner sc = new Scanner(System.in);
-        int n, m, k = 0;
+        System.out.println("Enter number of laps");
+        int c = sc.nextInt();
+        System.out.println("Enter number of players");
+        numberOfPlayers = sc.nextInt();
+        ans = new int[numberOfPlayers];
+        System.out.println("Enter type of players ('Random', 'Human' or 'Sequential')");
+        String type = sc.next();
         System.out.println("Enter number of rows (n) and columns (m): ");
         n = sc.nextInt();
         m = sc.nextInt();
@@ -25,20 +31,17 @@ public class Main {
             }
         }
 
-        //game
-        final Game game = new Game(new HumanPlayer(), new RandomPlayer(n, m));
-        int result;
-        NMKBoard board = new NMKBoard(n, m, k);
-        do {
-            result = game.play(board);
-        } while (result == 0);
+        //creating tournament
+        for (int i = 0; i < c; i++) {
+            Tournament tour = new Tournament(type, n, m, k);
+            tour.tournament(i + 1);
+        }
 
-        //output result
-        System.out.println("Current position: \n" + board.toString());
-        if (result == 3) {
-            System.out.println("Draw!");
-        } else {
-            System.out.println("n_m_k_game.Player " + RES.get(result) + " won!");
+        //results of the tournament
+        System.out.println("Here are the results of the tournament: ");
+        for (int i = 0; i < numberOfPlayers; i++) {
+            int num = i + 1;
+            System.out.println("Player " + num + ": " + ans[i]);
         }
     }
 

@@ -1,4 +1,4 @@
-package n_m_k_game;
+package game;
 
 public final class Move {
     private final int row;

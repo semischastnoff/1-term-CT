@@ -1,4 +1,4 @@
-package n_m_k_game;
+package game;
 
 public enum Result {
     WIN, LOSE, DRAW, UNKNOWN

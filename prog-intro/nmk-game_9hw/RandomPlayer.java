@@ -1,4 +1,4 @@
-package n_m_k_game;
+package game;
 
 import java.util.Random;
 
@@ -15,10 +15,10 @@ public class RandomPlayer implements Player {
     @Override
     public Move move(final Position position, final Cell cell) {
         while (true) {
-            int r = random.nextInt(n);
-            int c = random.nextInt(m);
-            System.out.println("Computer's random move: ");
-            System.out.println("row=" + r + " col=" + c);
+            int r = random.nextInt(this.n);
+            int c = random.nextInt(this.m);
+            //System.out.println("Computer's random move: ");
+            //System.out.println("row=" + r + " col=" + c);
             final Move move = new Move(r, c, cell);
             if (position.isValid(move)) {
                 return move;
