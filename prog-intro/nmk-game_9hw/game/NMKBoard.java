@@ -109,16 +109,48 @@ public class NMKBoard implements Board, Position {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append('\\');
+        int add = cntAddR(0);
+        sb.append(" ".repeat(add + 1));
         for (int col = 0; col < m; col++) {
+            int addC = cntAddC(col);
+            int addM = cntAddC(m);
             sb.append(col);
+            sb.append(" ".repeat(addM - addC + 1));
         }
         for (int r = 0; r < n; r++) {
             sb.append("\n");
             sb.append(r);
+            int addR = cntAddR(r);
+            sb.append(" ".repeat(addR + 1));
             for (int c = 0; c < m; c++) {
                 sb.append(SYM.get(cells[r][c]));
+                int addC = cntAddC(m);
+                sb.append(" ".repeat(addC));
             }
         }
         return sb.toString();
+    }
+
+    private int cntAddC(int c) {
+        int x = 1;
+        int res = 0;
+        while (c / x > 0) {
+            x *= 10;
+            res++;
+        }
+        return (c == 0) ? 1 : res;
+    }
+
+    private int cntAddR(int r) {
+        int cntN = 0, cntR = 0;
+        int x = 1;
+        while (n / x > 0) {
+            if (r / x > 0) {
+                cntR++;
+            }
+            x *= 10;
+            cntN++;
+        }
+        return (r == 0) ? cntN - cntR - 1 : cntN - cntR;
     }
 }
