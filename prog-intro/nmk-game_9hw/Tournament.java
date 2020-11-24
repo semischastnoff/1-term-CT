@@ -1,32 +1,8 @@
 package game;
 
-import java.util.Scanner;
-
 public class Tournament extends Main{
     private int numberOfGames;
-    private Player player1, player2;
-    private int n, m, k;
     private int lap;
-
-    public Tournament(String typeOfPlayers, int n, int m, int k) {
-        this.n = n;
-        this.m = m;
-        this.k = k;
-        switch (typeOfPlayers) {
-            case "Human" -> {
-                this.player1 = new HumanPlayer();
-                this.player2 = new HumanPlayer();
-            }
-            case "Random" -> {
-                this.player1 = new RandomPlayer(n, m);
-                this.player2 = new RandomPlayer(n, m);
-            }
-            case "Sequential" -> {
-                this.player1 = new SequentialPlayer(n, m);
-                this.player2 = new SequentialPlayer(n, m);
-            }
-        }
-    }
 
     public void tournament(int lap) {
         this.lap = lap;
@@ -42,16 +18,16 @@ public class Tournament extends Main{
 
     private void play(int num1, int num2) {
         //game
-        final Game game = new Game(this.player1, this.player2);
+        System.out.println("Game number: " + lap + "." + numberOfGames);
+        System.out.println("Between players " + num1 + " and " + num2);
+        final Game game = new Game(players.get(num1), players.get(num2));
         int result;
         NMKBoard board = new NMKBoard(n, m, k);
         do {
             result = game.play(board);
         } while (result == 0);
 
-        //output result
-        System.out.println("Game number: " + lap + "." + numberOfGames);
-        System.out.println("Between players " + num1 + " and " + num2);
+        //output result of the game
         System.out.println("Current position: \n" + board.toString());
         if (result == 3) {
             System.out.println("Draw!");
@@ -65,6 +41,14 @@ public class Tournament extends Main{
                 System.out.println("Player number " + num2 + " won!");
                 ans[num2 - 1] += 3;
             }
+        }
+    }
+
+    public void printRes() {
+        System.out.println("Here are the results of the tournament: ");
+        for (int i = 0; i < numberOfPlayers; i++) {
+            int num = i + 1;
+            System.out.println("Player " + num + ": " + ans[i]);
         }
     }
 }

@@ -30,7 +30,7 @@ public class HumanPlayer implements Player {
             }
             final int row = move.getRow();
             final int column = move.getColumn();
-            out.println("n_m_k_game.Move " + move + " is invalid" + ", try again:");
+            out.println("n_m_k_game.Move " + move + " is invalid" + ", try again");
         }
     }
 }

@@ -13,11 +13,15 @@ public class NMKBoard implements Board, Position {
     private final Cell[][] cells;
     private Cell turn;
     private final int n, m, k;
+    private int cntCol, cntRow, cntDiagM, cntDiagA;
+    private int row, col;
+    private int empty;
 
     public NMKBoard(int n, int m, int k) {
         this.n = n;
         this.m = m;
         this.k = k;
+        this.empty = n * m;
         this.cells = new Cell[n][m];
         for (Cell[] row : cells) {
             Arrays.fill(row, Cell.E);
@@ -41,101 +45,51 @@ public class NMKBoard implements Board, Position {
             return Result.LOSE;
         }
 
-        cells[move.getRow()][move.getColumn()] = move.getValue();
+        this.row = move.getRow();
+        this.col = move.getColumn();
+        cells[row][col] = move.getValue();
+        empty--;
 
-        if (checkCol()) {
+        if (hasWon()) {
             return Result.WIN;
         }
 
-        if (checkDiagonal1() || checkDiagonal2()) {
-            return Result.WIN;
-        }
-
-        if (isNowhereToGo()) {
+        if (empty <= 0) {
             return Result.DRAW;
         }
 
-        turn = turn == Cell.X ? Cell.O : Cell.X;
+        turn = (turn == Cell.X) ? Cell.O : Cell.X;
         return Result.UNKNOWN;
     }
 
-    private boolean isNowhereToGo() {
-        int cntEmpty = 0;
-        for (int r = 0; r < n; r++) {
-            for (int c = 0; c < m; c++) {
-                if (cells[r][c] == Cell.E) {
-                    cntEmpty++;
-                }
-            }
-        }
-        return (cntEmpty == 0);
+    private boolean hasWon() {
+        return checkWays(1, 0) == k || checkWays(0, 1) == k || checkWays(1, 1) == k || checkWays(1, -1) == k;
     }
 
-    private boolean checkCol() {
-        for (int r = 0; r < n; r++) {
-            int cntCol = 0;
-            int cntRow = 0;
-            if (cells[r][0] == turn) {
-                cntCol++;
-            }
-            if (r < m && cells[0][r] == turn) {
-                cntRow++;
-            }
-            for (int c = 1; c < m; c++) {
-                if (cells[r][c] == turn && (cells[r][c - 1] == turn || cells[r][c - 1] == Cell.E)) {
-                    cntCol++;
-                }
-                if (c < n && r < m && cells[c][r] == turn && (cells[c - 1][r] == turn || cells[c - 1][r] == Cell.E)) {
-                    cntRow++;
-                }
-            }
-            if (cntCol == k || cntRow == k) {
-                return true;
-            }
+    private int checkWays(int i, int j) {
+        int res = 0;
+        if (cells[row][col] == turn) {
+            res++;
         }
-        return false;
+        int r = row + i;
+        int c = col + j;
+        while (insdeOfBoard(r, c) && cells[r][c] == turn) {
+            r += i;
+            c += j;
+            res++;
+        }
+        r = row - i;
+        c = col - j;
+        while (insdeOfBoard(r, c) && cells[r][c] == turn) {
+            r -= i;
+            c -= j;
+            res++;
+        }
+        return res;
     }
 
-    private boolean checkDiagonal1() {
-        for (int startRow = n - 1; startRow >= 0; startRow--) {
-            int cntDiag = 0;
-            if (cells[startRow][0] == turn) {
-                cntDiag++;
-            }
-            int r = startRow + 1, c = 1;
-            while (r < n && c < m) {
-                if (cells[r][c] == turn && (cells[r - 1][c - 1] == turn|| cells[r - 1][c - 1] == Cell.E)) {
-                    cntDiag++;
-                }
-                r++;
-                c++;
-            }
-            if (cntDiag == k) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    private boolean checkDiagonal2() {
-        for (int startRow = 0; startRow < n; startRow++) {
-            int cntDiag = 0;
-            if (cells[startRow][0] == turn) {
-                cntDiag++;
-            }
-            int r = startRow - 1, c = 1;
-            while (r >= 0 && c < m) {
-                if (cells[r][c] == turn && (cells[r + 1][c - 1] == turn || cells[r + 1][c - 1] == Cell.E)) {
-                    cntDiag++;
-                }
-                r--;
-                c++;
-            }
-            if (cntDiag == k) {
-                return true;
-            }
-        }
-        return false;
+    private boolean insdeOfBoard(int r, int c) {
+        return (r < n && c < m) && (r >= 0 && c >= 0);
     }
 
     @Override

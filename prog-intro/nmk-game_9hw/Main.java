@@ -1,51 +1,51 @@
 package game;
 
-import java.util.Scanner;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
     protected static int[] ans;
     protected static int numberOfPlayers;
     protected static int n, m, k;
+    protected static Map<Integer, Player> players = new HashMap<>();
+    protected static Map<String, Player> PLAYER;
 
     public static void main(String[] args) {
         //input
-        Scanner sc = new Scanner(System.in);
+        CReader rd = new CReader();
         System.out.println("Enter number of laps");
-        int c = sc.nextInt();
+        int c = rd.readInt(false);
         System.out.println("Enter number of players");
-        numberOfPlayers = sc.nextInt();
+        numberOfPlayers = rd.readInt(false);
         ans = new int[numberOfPlayers];
-        System.out.println("Enter type of players ('Random', 'Human' or 'Sequential')");
-        String type = sc.next();
-        System.out.println("Enter number of rows (n) and columns (m): ");
-        n = sc.nextInt();
-        m = sc.nextInt();
-        boolean correctK = false;
-        while (!correctK) {
-            System.out.println("Enter number of cells in a row to win (k): ");
-            k = sc.nextInt();
-            if (isCorrect(n, m, k)) {
-                correctK = true;
-            } else {
-                System.out.println("Parameter k is incorrect, try again");
-            }
+        System.out.println("Enter number of rows (n)");
+        n = rd.readInt(false);
+        System.out.println("Enter number of columns (m)");
+        m = rd.readInt(false);
+        System.out.println("Enter number of cells in a row to win (k)");
+        k = rd.readInt(true);
+        PLAYER = Map.of("Human", new HumanPlayer(),
+                "Random", new RandomPlayer(n, m),
+                "Sequential", new SequentialPlayer(n, m));
+        for (int i = 0; i < numberOfPlayers; i++) {
+            int num = i + 1;
+            System.out.println("Enter " + num + " player's type");
+            String typeOfPlayer = rd.readPlayer();
+            players.put(i + 1, PLAYER.get(typeOfPlayer));
         }
 
         //creating tournament
+        Tournament tour = null;
         for (int i = 0; i < c; i++) {
-            Tournament tour = new Tournament(type, n, m, k);
+            tour = new Tournament();
             tour.tournament(i + 1);
         }
 
         //results of the tournament
-        System.out.println("Here are the results of the tournament: ");
-        for (int i = 0; i < numberOfPlayers; i++) {
-            int num = i + 1;
-            System.out.println("Player " + num + ": " + ans[i]);
+        if (tour != null) {
+            tour.printRes();
+        } else {
+            throw new NullPointerException("Something went wrong during the game");
         }
-    }
-
-    private static boolean isCorrect(int n, int m, int k) {
-        return (k <= n || k <= m);
     }
 }
