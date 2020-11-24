@@ -34,7 +34,7 @@ public class CReader extends Main {
             return false;
         }
         if (this.checkK) {
-            return (x <= n && x <= m) && x > 0;
+            return (x <= game.Main.n && x <= game.Main.m) && x > 0;
         }
         return (x > 0);
     }
