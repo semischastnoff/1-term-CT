@@ -1,7 +1,7 @@
-package expression;
+package expressions.expression;
 
 public class Multiply extends AbstractExpression {
-    public Multiply(Expression obj1, Expression obj2) {
+    public Multiply(BaseExpression obj1, BaseExpression obj2) {
         super(obj1, obj2, '*');
     }
 

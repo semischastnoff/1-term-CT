@@ -1,10 +1,10 @@
-package expression;
+package expressions.expression;
 
-public abstract class AbstractExpression implements Expression {
-    private final Expression expr1, expr2;
+public abstract class AbstractExpression implements BaseExpression {
+    private final BaseExpression expr1, expr2;
     private final char operation;
 
-    public AbstractExpression(Expression expr1, Expression expr2, char operation) {
+    public AbstractExpression(BaseExpression expr1, BaseExpression expr2, char operation) {
         this.expr1 = expr1;
         this.expr2 = expr2;
         this.operation = operation;
@@ -23,6 +23,11 @@ public abstract class AbstractExpression implements Expression {
     @Override
     public int evaluate(int x) {
         return eval(expr1.evaluate(x), expr2.evaluate(x));
+    }
+
+    @Override
+    public int evaluate(int x, int y, int z) {
+        return eval(expr1.evaluate(x, y, z), expr2.evaluate(x, y, z));
     }
 
     @Override

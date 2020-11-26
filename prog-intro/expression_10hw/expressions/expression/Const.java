@@ -1,6 +1,6 @@
-package expression;
+package expressions.expression;
 
-public class Const implements Expression{
+public class Const implements BaseExpression {
     private final int constant;
 
     public Const(int constant) {
@@ -9,6 +9,11 @@ public class Const implements Expression{
 
     @Override
     public int evaluate(int x) {
+        return this.constant;
+    }
+
+    @Override
+    public int evaluate(int x, int y, int z) {
         return this.constant;
     }
 

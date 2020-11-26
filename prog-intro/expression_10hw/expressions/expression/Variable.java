@@ -1,6 +1,6 @@
-package expression;
+package expressions.expression;
 
-public class Variable implements Expression{
+public class Variable implements BaseExpression {
     private final String name;
 
     public Variable(String variable) {
@@ -10,6 +10,17 @@ public class Variable implements Expression{
     @Override
     public int evaluate(int x) {
         return x;
+    }
+
+    @Override
+    public int evaluate(int x, int y, int z) {
+        if (name.equals("x")) {
+            return x;
+        } else if (name.equals("y")) {
+            return y;
+        } else {
+            return z;
+        }
     }
 
     @Override

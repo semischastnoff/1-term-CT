@@ -1,7 +1,7 @@
-package expression;
+package expressions.expression;
 
 public class Divide extends AbstractExpression {
-    public Divide(Expression obj1, Expression obj2) {
+    public Divide(BaseExpression obj1, BaseExpression obj2) {
         super(obj1, obj2, '/');
     }
 

@@ -1,7 +1,7 @@
-package expression;
+package expressions.expression;
 
 public class Subtract extends AbstractExpression {
-    public Subtract(Expression obj1, Expression obj2) {
+    public Subtract(BaseExpression obj1, BaseExpression obj2) {
         super(obj1, obj2, '-');
     }
 

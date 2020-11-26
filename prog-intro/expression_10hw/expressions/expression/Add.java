@@ -1,7 +1,7 @@
-package expression;
+package expressions.expression;
 
 public class Add extends AbstractExpression{
-    public Add(Expression obj1, Expression obj2) {
+    public Add(BaseExpression obj1, BaseExpression obj2) {
         super(obj1, obj2, '+');
     }
 

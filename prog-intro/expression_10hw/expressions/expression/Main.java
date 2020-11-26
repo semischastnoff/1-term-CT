@@ -1,4 +1,4 @@
-package expression;
+package expressions.expression;
 
 public class Main {
     public static void main(String[] args) {

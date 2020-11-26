@@ -1,7 +1,7 @@
-package expression;
+package expressions.expression;
 
-import base.Asserts;
-import base.TestCounter;
+import expressions.base.Asserts;
+import expressions.base.TestCounter;
 
 import java.util.*;
 
