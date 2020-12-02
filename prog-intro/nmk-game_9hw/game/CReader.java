@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class CReader extends Main {
     public Scanner sc = new Scanner(System.in);
 
-    private boolean checkK;
+    private String check;
 
-    int readInt(boolean check) {
+    int readInt(String check) {
+        this.check = check;
         String s = sc.next();
-        this.checkK = check;
         while (!isNum(s)) {
             System.out.println("Your input is incorrect, please try again");
             s = sc.next();
@@ -33,8 +33,11 @@ public class CReader extends Main {
         } catch (NumberFormatException e) {
             return false;
         }
-        if (this.checkK) {
-            return (x <= game.Main.n && x <= game.Main.m) && x > 0;
+        if (check.equals("K")) {
+            return (x <= n && x <= m) && x > 0;
+        }
+        if (check.equals("move")) {
+            return (x <= n && x <= m) && (x >= 0);
         }
         return (x > 0);
     }

@@ -6,15 +6,14 @@ import java.util.Scanner;
 
 public class HumanPlayer implements Player {
     private final PrintStream out;
-    private final Scanner in;
+    private final CReader rd = new CReader();
 
-    public HumanPlayer(final PrintStream out, final Scanner in) {
+    public HumanPlayer(final PrintStream out) {
         this.out = out;
-        this.in = in;
     }
 
     public HumanPlayer() {
-        this(System.out, new Scanner(System.in));
+        this(System.out);
     }
 
     @Override
@@ -23,14 +22,14 @@ public class HumanPlayer implements Player {
             out.println("Current position: ");
             out.println(position);
             out.println(cell + "'s move");
-            out.println("Enter row and column");
-            final Move move = new Move(in.nextInt(), in.nextInt(), cell);
+            out.println("Enter row");
+            int r = rd.readInt("move");
+            out.println("Enter column");
+            int c = rd.readInt("move");
+            final Move move = new Move(r, c, cell);
             if (position.isValid(move)) {
                 return move;
             }
-            final int row = move.getRow();
-            final int column = move.getColumn();
-            out.println("n_m_k_game.Move " + move + " is invalid" + ", try again");
         }
     }
 }

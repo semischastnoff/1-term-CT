@@ -13,7 +13,6 @@ public class NMKBoard implements Board, Position {
     private final Cell[][] cells;
     private Cell turn;
     private final int n, m, k;
-    private int cntCol, cntRow, cntDiagM, cntDiagA;
     private int row, col;
     private int empty;
 
@@ -27,6 +26,14 @@ public class NMKBoard implements Board, Position {
             Arrays.fill(row, Cell.E);
         }
         turn = Cell.X;
+    }
+
+    public int getN() {
+        return this.n;
+    }
+
+    public int getM() {
+        return this.m;
     }
 
     @Override
@@ -66,23 +73,20 @@ public class NMKBoard implements Board, Position {
         return checkWays(1, 0) == k || checkWays(0, 1) == k || checkWays(1, 1) == k || checkWays(1, -1) == k;
     }
 
-    private int checkWays(int i, int j) {
+    private int checkWays(int dr, int dc) {
+        int res = 1;
+        res += checkPosOrNeg(1, dr, dc);
+        res += checkPosOrNeg(-1, dr, dc);
+        return res;
+    }
+
+    private int checkPosOrNeg(int way, int dr, int dc) {
         int res = 0;
-        if (cells[row][col] == turn) {
-            res++;
-        }
-        int r = row + i;
-        int c = col + j;
+        int r = row + way * dr;
+        int c = col + way * dc;
         while (insdeOfBoard(r, c) && cells[r][c] == turn) {
-            r += i;
-            c += j;
-            res++;
-        }
-        r = row - i;
-        c = col - j;
-        while (insdeOfBoard(r, c) && cells[r][c] == turn) {
-            r -= i;
-            c -= j;
+            r += way * dr;
+            c += way * dc;
             res++;
         }
         return res;
