@@ -1,32 +1,32 @@
 # First term KT
 *Bio:* I'm studying on KT M3134 and here are all my homeworks, labs and etc
 
-## Algo
-#### Первая лабораторная: 
+## *Algo*
+#### Первая лабораторная:
 
-*This laboratory contains problems that have solutions based on some `sorting algorithms and heaps`*
+*Сортировки, куча, бинпоиск*
 
-[Problems](https://codeforces.com/group/IcRBR8epox/contest/298374)
+- [Условия](https://codeforces.com/group/IcRBR8epox/contest/298374)
 
-[Solutions](https://github.com/semischastnoff/1-term-KT/tree/main/algo/1lab_heaps_sorts)
+- [Решения](https://github.com/semischastnoff/1-term-KT/tree/main/algo/1lab_heaps_sorts)
 
-- **Second lab:**
+#### Вторая лабораторная: 
 
-*Problems based on `stack, deque, queue and dsu algorithms`*
+*Стеки, деки, очереди, СНМ*
 
-[Problems](https://codeforces.com/group/IcRBR8epox/contest/302601)
+- [Условия](https://codeforces.com/group/IcRBR8epox/contest/302601)
 
-[Solutions](https://github.com/semischastnoff/1-term-KT/tree/main/algo/2lab_stack_queue_dsu)
+- [Решения](https://github.com/semischastnoff/1-term-KT/tree/main/algo/2lab_stack_queue_dsu)
 
-- **Third lab:**
+#### Третья лабораторная: 
 
-*Problems based on `dynamic programming algorithms`*
+*Динамическое программирование*
 
-[Problems](https://codeforces.com/group/IcRBR8epox/contest/306741)
+- [Условия](https://codeforces.com/group/IcRBR8epox/contest/306741)
 
-[Solutions](https://github.com/semischastnoff/1-term-KT/tree/main/algo/3lab_dynamics)
+- [Решения](https://github.com/semischastnoff/1-term-KT/tree/main/algo/3lab_dynamics)
 
-## Prog-Intro
+## *Prog-Intro*
 
 ### Домашнее задание 13. Markdown to HTML
 
@@ -186,7 +186,7 @@
       * Ненумерованных списков (класс `UnorderedList`, окружение `itemize`): последовательность элементов
       * Элементов списка (класс `ListItem`, тег `\item`: последовательность абзацев и списков
     * Для новых классов поддержка Markdown не требуется
-    * [Исходный код тестов](java/markup/TexListTest.java)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/markup/TexListTest.java)
  * *BBCodeList*
     * Сделайте модификацию *BBCode*
     * Добавьте поддержку:
@@ -194,7 +194,7 @@
       * Ненумерованных списков (класс `UnorderedList`, тег `list`): последовательность элементов
       * Элементов списка (класс `ListItem`, открывающий тег `*`): последовательность абзацев и списков
     * Для новых классов поддержка Markdown не требуется
-    * [Исходный код тестов](java/markup/BBCodeListTest.java)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/markup/BBCodeListTest.java)
 
 
 
@@ -202,25 +202,25 @@
 
 Исходный код тестов:
 
-* [WordStatIndexTest.java](java/wordStat/WordStatIndexTest.java)
-* [WordStatIndexChecker.java](java/wordStat/WordStatIndexChecker.java)
+* [WordStatIndexTest.java](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/wordStat/WordStatIndexTest.java)
+* [WordStatIndexChecker.java](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/wordStat/WordStatIndexChecker.java)
 
-Откомпилированные тесты: [WordStatIndexTest.jar](artifacts/wordStat/WordStatIndexTest.jar)
+Откомпилированные тесты: [WordStatIndexTest.jar](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/wordStat/WordStatIndexTest.jar)
 
 Модификации
  * *LineIndex*  (32, 33)
     * Вместо номеров вхождений во всем файле надо указывать
       `<номер строки>:<номер в строке>`
     * Класс должен иметь имя `WordStatLineIndex`
-    * [Исходный код тестов](java/wordStat/WordStatLineIndexTest.java)
-    * [Откомпилированные тесты](artifacts/wordStat/WordStatLineIndexTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/wordStat/WordStatLineIndexTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/wordStat/WordStatLineIndexTest.jar)
  * *SortedLineIndex* (34, 35)
     * В выходном файле слова должны быть упорядочены в лексикографическом порядке
     * Вместо номеров вхождений во всем файле надо указывать
       `<номер строки>:<номер в строке>`
     * Класс должен иметь имя `WordStatSortedLineIndex`
-    * [Исходный код тестов](java/wordStat/WordStatSortedLineIndexTest.java)
-    * [Откомпилированные тесты](artifacts/wordStat/WordStatSortedLineIndexTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/wordStat/WordStatSortedLineIndexTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/wordStat/WordStatSortedLineIndexTest.jar)
  * *CountLineIndex*  (36, 37)
     * В выходном файле слова должны быть упорядочены по возрастанию числа
       вхождений, а при равном числе вхождений – по порядку первого вхождения
@@ -228,8 +228,8 @@
     * Вместо номеров вхождений во всем файле надо указывать
       `<номер строки>:<номер в строке>`
     * Класс должен иметь имя `WordStatCountLineIndex`
-    * [Исходный код тестов](java/wordStat/WordStatCountLineIndexTest.java)
-    * [Откомпилированные тесты](artifacts/wordStat/WordStatCountLineIndexTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/wordStat/WordStatCountLineIndexTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/wordStat/WordStatCountLineIndexTest.jar)
  * *CountFirstIndex*
     * В выходном файле слова должны быть упорядочены по возрастанию числа
       вхождений, а при равном числе вхождений – по порядку первого вхождения
@@ -237,8 +237,8 @@
     * Вместо номеров вхождений во всем файле надо указывать
       только первое вхождение в каждой строке
     * Класс должен иметь имя `WordStatCountFirstIndex`
-    * [Исходный код тестов](java/wordStat/WordStatCountFirstIndexTest.java)
-    * [Откомпилированные тесты](artifacts/wordStat/WordStatCountFirstIndexTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/wordStat/WordStatCountFirstIndexTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/wordStat/WordStatCountFirstIndexTest.jar)
 
 
 
@@ -246,44 +246,44 @@
 
 Исходный код тестов:
 
-* [FastReverseTest.java](java/reverse/FastReverseTest.java)
+* [FastReverseTest.java](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/reverse/FastReverseTest.java)
 
-Откомпилированные тесты: [FastReverseTest.jar](artifacts/reverse/FastReverseTest.jar)
+Откомпилированные тесты: [FastReverseTest.jar](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/reverse/FastReverseTest.jar)
 Модификации
  * *Hex* (32, 33)
     * Во вводе и выводе используются числа в шестнадцатеричной системе счисления
     * Класс должен иметь имя `ReverseHex`
-    * [Исходный код тестов](java/reverse/FastReverseHexTest.java)
-    * [Откомпилированные тесты](artifacts/reverse/FastReverseHexTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/reverse/FastReverseHexTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/reverse/FastReverseHexTest.jar)
  * *Abc* (34, 35)
     * Во вводе и выводе используются числа, записаные буквами:
       нулю соответствует буква `a`, единице – `b` и так далее
     * Класс должен иметь имя `ReverseAbc`
-    * [Исходный код тестов](java/reverse/FastReverseAbcTest.java)
-    * [Откомпилированные тесты](artifacts/reverse/FastReverseAbcTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/reverse/FastReverseAbcTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/reverse/FastReverseAbcTest.jar)
  * *HexDec* (36, 37)
     * На вход подаются десятичные и шестнадцатеричные числа
     * Шестнадцатеричные числа имеют префикс `0x`
     * Класс должен иметь имя `ReverseHexDec`
-    * [Исходный код тестов](java/reverse/FastReverseHexDecTest.java)
-    * [Откомпилированные тесты](artifacts/reverse/FastReverseHexDecTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/reverse/FastReverseHexDecTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/reverse/FastReverseHexDecTest.jar)
  * *HexAbc* (38, 39)
     * На вход подаются десятичные и шестнадцатеричные числа
     * Шестнадцатеричные числа имеют префикс `0x`
     * Десятеричные числа могут быть записаны буквами
     * Класс должен иметь имя `ReverseHexAbc`
-    * [Исходный код тестов](java/reverse/FastReverseHexAbcTest.java)
-    * [Откомпилированные тесты](artifacts/reverse/FastReverseHexAbcTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/reverse/FastReverseHexAbcTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/reverse/FastReverseHexAbcTest.jar)
 
 
 ### Домашнее задание 4. Подсчет слов
 
 Исходный код тестов:
 
-* [WordStatInputTest.java](java/wordStat/WordStatInputTest.java)
-* [WordStatChecker.java](java/wordStat/WordStatChecker.java)
+* [WordStatInputTest.java](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/wordStat/WordStatInputTest.java)
+* [WordStatChecker.java](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/wordStat/WordStatChecker.java)
 
-Откомпилированные тесты: [WordStatInputTest.jar](artifacts/wordStat/WordStatInputTest.jar)
+Откомпилированные тесты: [WordStatInputTest.jar](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/wordStat/WordStatInputTest.jar)
 
 Модификации
  * *InputPrefix* (32, 33)
@@ -291,67 +291,67 @@
       слов встречающихся во входном файле, в порядке их появления.
       Слова длины меньшей 3 игнорируются.
     * Класс должен иметь имя `WordStatInputPrefix`
-    * [Исходный код тестов](java/wordStat/WordStatInputPrefixTest.java)
-    * [Откомпилированные тесты](artifacts/wordStat/WordStatInputPrefixTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/wordStat/WordStatInputPrefixTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/wordStat/WordStatInputPrefixTest.jar)
  * *InputShingles* (34, 35)
     * Выходной файл должен содержать все различные подстроки длины 3
       слов встречающихся во входном файле, в порядке их появления.
       Слова длины меньшей 3 игнорируются.
     * Класс должен иметь имя `WordStatInputShingles`
-    * [Исходный код тестов](java/wordStat/WordStatInputShinglesTest.java)
-    * [Откомпилированные тесты](artifacts/wordStat/WordStatInputShinglesTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/wordStat/WordStatInputShinglesTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/wordStat/WordStatInputShinglesTest.jar)
  * *WordsPrefix* (для 36, 37)
     * Выходной файл должен содержать все различные префиксы длины 3
       слов встречающихся во входном файле, в лексикографическом порядке.
       Слова длины меньшей 3 игнорируются.
     * Класс должен иметь имя `WordStatWordsPrefix`
-    * [Исходный код тестов](java/wordStat/WordStatWordsPrefixTest.java)
-    * [Откомпилированные тесты](artifacts/wordStat/WordStatWordsPrefixTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/wordStat/WordStatWordsPrefixTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/wordStat/WordStatWordsPrefixTest.jar)
  * *CountShingles* (для 38, 39)
     * Выходной файл должен содержать все различные подстроки длины 3
       слов встречающихся во входном файле, упорядоченые по возрастанию числа
       вхождений, а при равном числе вхождений – по порядку первого вхождения
       во входном файле.
     * Класс должен иметь имя `WordStatCountShingles`
-    * [Исходный код тестов](java/wordStat/WordStatCountShinglesTest.java)
-    * [Откомпилированные тесты](artifacts/wordStat/WordStatCountShinglesTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/wordStat/WordStatCountShinglesTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/wordStat/WordStatCountShinglesTest.jar)
 
 
 ### Домашнее задание 3. Реверс
 
 Исходный код тестов:
 
-* [ReverseTest.java](java/reverse/ReverseTest.java)
-* [ReverseChecker.java](java/reverse/ReverseChecker.java)
+* [ReverseTest.java](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/reverse/ReverseTest.java)
+* [ReverseChecker.java](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/reverse/ReverseChecker.java)
 
-Откомпилированные тесты: [ReverseTest.jar](artifacts/reverse/ReverseTest.jar)
+Откомпилированные тесты: [ReverseTest.jar](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/reverse/ReverseTest.jar)
 
 Модификации:
  * *Max* (для 32, 33)
     * Рассмотрим входные данные как (не полностью определенную) матрицу,
       вместо каждого числа выведите максимум из чисел в его столбце и строке
     * Класс должен иметь имя `ReverseMax`
-    * [Исходный код тестов](java/reverse/ReverseMaxTest.java)
-    * [Откомпилированные тесты](artifacts/reverse/ReverseMaxTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/reverse/ReverseMaxTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/reverse/ReverseMaxTest.jar)
  * *Min* (для 34, 35)
     * Рассмотрим входные данные как (не полностью определенную) матрицу,
       вместо каждого числа выведите минимум из чисел в его столбце и строке
     * Класс должен иметь имя `ReverseMin`
-    * [Исходный код тестов](java/reverse/ReverseMinTest.java)
-    * [Откомпилированные тесты](artifacts/reverse/ReverseMinTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/reverse/ReverseMinTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/reverse/ReverseMinTest.jar)
  * *Avg* (для 36-39)
     * Рассмотрим входные данные как (не полностью определенную) матрицу,
       вместо каждого числа выведите среднее из чисел в его столбце и строке
     * Класс должен иметь имя `ReverseAvg`
-    * [Исходный код тестов](java/reverse/ReverseAvgTest.java)
-    * [Откомпилированные тесты](artifacts/reverse/ReverseAvgTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/reverse/ReverseAvgTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/reverse/ReverseAvgTest.jar)
 
 
 ### Домашнее задание 2. Сумма чисел
 
 Для того, чтобы протестировать исходную программу:
 
- 1. Скачайте откомпилированные тесты ([SumTest.jar](artifacts/sum/SumTest.jar))
+ 1. Скачайте откомпилированные тесты ([SumTest.jar](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/sum/SumTest.jar))
  1. Откомпилируйте `Sum.java`
  1. Проверьте, что создался `Sum.class`
  1. В каталоге, в котором находится `Sum.class` выполните команду
@@ -365,39 +365,39 @@
 
 Исходный код тестов:
 
-* [SumTest.java](java/sum/SumTest.java)
-* [SumChecker.java](java/sum/SumChecker.java)
-* [Базовые классы](java/base/)
+* [SumTest.java](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/sum/SumTest.java)
+* [SumChecker.java](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/sum/SumChecker.java)
+* [Базовые классы](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/base/)
 
 Модификации:
  * *Long* (для 32, 33)
     * Входные данные являются 64-битными целыми числами
     * Класс должен иметь имя `SumLong`
-    * [Исходный код тестов](java/sum/SumLongTest.java)
-    * [Откомпилированные тесты](artifacts/sum/SumLongTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/sum/SumLongTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/sum/SumLongTest.jar)
  * *Float* (для 34, 35)
     * Входные данные являются 32-битными числами с формате с плавающей точкой
     * Класс должен иметь имя `SumFloat`
-    * [Исходный код тестов](java/sum/SumFloatTest.java)
-    * [Откомпилированные тесты](artifacts/sum/SumFloatTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/sum/SumFloatTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/sum/SumFloatTest.jar)
  * *LongSpace* (для 36, 37)
     * Входные данные являются 64-битными целыми числами
     * Класс должен иметь имя `SumLongSpace`
     * Числа разделяются [пробелами-разделителями](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#SPACE_SEPARATOR)
-    * [Исходный код тестов](java/sum/SumLongSpaceTest.java)
-    * [Откомпилированные тесты](artifacts/sum/SumLongSpaceTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/sum/SumLongSpaceTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/sum/SumLongSpaceTest.jar)
  * *BigIntegerSpace* (для 38, 39)
     * Входные данные помещаются в тип [BigInteger](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html)
     * Класс должен иметь имя `SumBigIntegerSpace`
     * Числа разделяются [пробелами-разделителями](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#SPACE_SEPARATOR)
-    * [Исходный код тестов](java/sum/SumBigIntegerSpaceTest.java)
-    * [Откомпилированные тесты](artifacts/sum/SumBigIntegerSpaceTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/sum/SumBigIntegerSpaceTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/sum/SumBigIntegerSpaceTest.jar)
 
 
 
 ### Домашнее задание 1. Запусти меня!
 
- 1. Скачайте исходный код ([RunMe.java](java/RunMe.java))
+ 1. Скачайте исходный код ([RunMe.java](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/RunMe.java))
  1. Откомпилируйте код (должен получиться `RunMe.class`)
  1. Запустите класс `RunMe` с выданными вам аргументами командной строки
  1. Следуйте выведенной инструкции
