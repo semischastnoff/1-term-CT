@@ -315,7 +315,7 @@
     * Класс должен иметь имя `WordStatCountShingles`
     * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/wordStat/WordStatCountShinglesTest.java)
     * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/wordStat/WordStatCountShinglesTest.jar)
-
+ 
 
 ### Домашнее задание 3. Реверс
 
