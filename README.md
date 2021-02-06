@@ -24,4 +24,4 @@ I'm studying on KT M3134 and here are all my homeworks, labs and etc.
 
 [Problems](https://codeforces.com/group/IcRBR8epox/contest/306741)
 
-[Solutions]()
+[Solutions](https://github.com/semischastnoff/1-term-KT/tree/main/algo/3lab_dynamics)
