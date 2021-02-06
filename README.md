@@ -325,6 +325,7 @@
 * [ReverseChecker.java](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/reverse/ReverseChecker.java)
 
 Откомпилированные тесты: [ReverseTest.jar](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/reverse/ReverseTest.jar)
+* ***[Решение](https://github.com/semischastnoff/1-term-KT/tree/main/prog-intro/Reverse_3hw-prog/Normal)***
 
 Модификации:
  * *Max* (для 32, 33)
@@ -339,6 +340,7 @@
     * Класс должен иметь имя `ReverseMin`
     * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/reverse/ReverseMinTest.java)
     * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/reverse/ReverseMinTest.jar)
+    * ***[Решение](https://github.com/semischastnoff/1-term-KT/tree/main/prog-intro/Reverse_3hw-prog/ReverseMin)***
  * *Avg* (для 36-39)
     * Рассмотрим входные данные как (не полностью определенную) матрицу,
       вместо каждого числа выведите среднее из чисел в его столбце и строке
@@ -368,6 +370,7 @@
 * [SumTest.java](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/sum/SumTest.java)
 * [SumChecker.java](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/sum/SumChecker.java)
 * [Базовые классы](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/base/)
+* ***[Решение](https://github.com/semischastnoff/1-term-KT/tree/main/prog-intro/Sum_2hw-prog/Nomal)***
 
 Модификации:
  * *Long* (для 32, 33)
@@ -376,6 +379,7 @@
     * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/sum/SumLongTest.java)
     * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/sum/SumLongTest.jar)
  * *Float* (для 34, 35)
+    * ***[Решение](https://github.com/semischastnoff/1-term-KT/tree/main/prog-intro/Sum_2hw-prog/SumFloat)***
     * Входные данные являются 32-битными числами с формате с плавающей точкой
     * Класс должен иметь имя `SumFloat`
     * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/sum/SumFloatTest.java)
