@@ -32,22 +32,22 @@
 
 Модификации
  * *Базовая*
-    * [Исходный код тестов](java/md2html/Md2HtmlTest.java)
-    * [Откомпилированные тесты](artifacts/md2html/Md2HtmlTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/md2html/Md2HtmlTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/md2html/Md2HtmlTest.jar)
  * *Mark* (32-35)
     * Добавьте поддержку `~выделения цветом~`: `<mark>выделения цветом</mark>`
-    * [Исходный код тестов](java/md2html/Md2HtmlMarkTest.java)
-    * [Откомпилированные тесты](artifacts/md2html/Md2HtmlMarkTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/md2html/Md2HtmlMarkTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/md2html/Md2HtmlMarkTest.jar)
  * *Image* (36, 37)
     * Добавьте поддержку ```![картинок](http://www.ifmo.ru/images/menu/small/p10.jpg)```:
         ```&lt;img alt='картинок' src='http://www.ifmo.ru/images/menu/small/p10.jpg'&gt;```
-    * [Исходный код тестов](java/md2html/Md2HtmlImageTest.java)
-    * [Откомпилированные тесты](artifacts/md2html/Md2HtmlImageTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/md2html/Md2HtmlImageTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/md2html/Md2HtmlImageTest.jar)
  * *Link* (38, 39)
     * Добавьте поддержку ```[ссылок с _выделением_](https://kgeorgiy.info)```:
         ```&lt;a href='https://kgeorgiy.info'>ссылок с &lt;em>выделением&lt;/em>&lt;/a>```
-    * [Исходный код тестов](java/md2html/Md2HtmlLinkTest.java)
-    * [Откомпилированные тесты](artifacts/md2html/Md2HtmlLinkTest.jar)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/md2html/Md2HtmlLinkTest.java)
+    * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/md2html/Md2HtmlLinkTest.jar)
 
 
 ### Домашнее задание 12. Обработка ошибок
@@ -55,30 +55,30 @@
 Модификации
  * *Базовая*
     * Класс `ExpressionParser` должен реализовывать интерфейс
-        [Parser](java/expression/exceptions/Parser.java)
+        [Parser](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/exceptions/Parser.java)
     * Классы `CheckedAdd`, `CheckedSubtract`, `CheckedMultiply`,
         `CheckedDivide` и `CheckedNegate` должны реализовывать интерфейс
-        [TripleExpression](java/expression/TripleExpression.java)
+        [TripleExpression](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/TripleExpression.java)
     * Нельзя использовать типы `long` и `double`
     * Нельзя использовать методы классов `Math` и `StrictMath`
-    * [Исходный код тестов](java/expression/exceptions/ExceptionsTest.java)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/exceptions/ExceptionsTest.java)
  * *AbsSqrt* (32-35)
     * Дополнительно реализуйте унарные операции:
         * `abs` – модуль числа, `abs -5` равно 5;
         * `sqrt` – квадратный корень, `sqrt 24` равно 4.
-    * [Исходный код тестов](java/expression/exceptions/ExceptionsAbsSqrtTest.java)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/exceptions/ExceptionsAbsSqrtTest.java)
  * *MinMax* (36, 37)
     * Реализуйте операции модификации *AbsSqrt*.
     * Дополнительно реализуйте бинарные операции (минимальный приоритет):
         * `min` – минимум, `2 min 3` равно 2;
         * `max` – максимум, `2 max 3` равно 3.
-    * [Исходный код тестов](java/expression/exceptions/ExceptionsMinMaxTest.java)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/exceptions/ExceptionsMinMaxTest.java)
  * *GcdLcm* (38, 39)
     * Реализуйте операции модификации *AbsSqrt*.
     * Дополнительно реализуйте бинарные операции (минимальный приоритет):
         * `gcd` – НОД, `2 gcd -3` равно 1;
         * `lcm` – НОК, `2 lcm -3` равно -6.
-    * [Исходный код тестов](java/expression/exceptions/ExceptionsGcdLcmTest.java)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/exceptions/ExceptionsGcdLcmTest.java)
 
 
 ### Домашнее задание 11. Разбор выражений
@@ -86,22 +86,22 @@
 Модификации
  * *Базовая*
     * Класс `ExpressionParser` должен реализовывать интерфейс
-        [Parser](java/expression/parser/Parser.java)
+        [Parser](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/parser/Parser.java)
     * Результат разбора должен реализовывать интерфейс
-        [TripleExpression](java/expression/TripleExpression.java)
-    * [Исходный код тестов](java/expression/parser/ParserTest.java)
+        [TripleExpression](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/TripleExpression.java)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/parser/ParserTest.java)
  * *Bitwise* (32-35)
     * Дополнительно реализуйте бинарные операции:
         * `&` – побитное И, приоритет меньше чем у `+` (`6 & 1 + 2` равно `6 & (1 + 2)` равно 2);
         * `^` – побитный XOR, приоритет меньше чем у `&` (`6 ^ 1 + 2` равно `6 ^ (1 + 2)` равно 5);
         * `|` – побитное ИЛИ, приоритет меньше чем у `^` (`6 | 1 + 2` равно `6 | (1 + 2)` равно 7);
-    * [Исходный код тестов](java/expression/parser/ParserBitwiseTest.java)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/parser/ParserBitwiseTest.java)
  * *NotCount* (36, 37)
     * Реализуйте операции из модификации *Bitwise*.
     * Дополнительно реализуйте унарные операции (приоритет как у унарного минуса):
         * `~` – побитное отрицание, `~-5` равно 4;
         * `count` – число установленных битов, `count -5` равно 31.
-    * [Исходный код тестов](java/expression/parser/ParserNotCountTest.java)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/parser/ParserNotCountTest.java)
  * *FlipLow* (38, 39)
     * Реализуйте операции из модификации *Bitwise*.
     * Дополнительно реализуйте унарные операции (приоритет как у унарного минуса):
@@ -110,7 +110,7 @@
         * `low` – минимальный установленный бит
                  (как в [lowestOneBit](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#lowestOneBit%28int%29)),
                  `low 123456` равно 64.
-    * [Исходный код тестов](java/expression/parser/ParserFlipLowTest.java)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/parser/ParserFlipLowTest.java)
 
 
 
@@ -118,20 +118,20 @@
 
 Модификации
  * *Базовая*
-    * Реализуйте интерфейс [Expression](java/expression/Expression.java)
-    * [Исходный код тестов](java/expression/ExpressionTest.java)
+    * Реализуйте интерфейс [Expression](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/Expression.java)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/ExpressionTest.java)
         * Запускать c аргументом `easy` или `hard`
  * *Triple* (32-35)
-    * Дополнительно реализуйте интерфейс [TripleExpression](java/expression/TripleExpression.java)
-    * [Исходный код тестов](java/expression/TripleExpressionTest.java)
+    * Дополнительно реализуйте интерфейс [TripleExpression](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/TripleExpression.java)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/TripleExpressionTest.java)
  * *Double* (36, 37)
-    * Дополнительно реализуйте интерфейс [DoubleExpression](java/expression/DoubleExpression.java)
-    * [Исходный код тестов](java/expression/DoubleExpressionTest.java)
+    * Дополнительно реализуйте интерфейс [DoubleExpression](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/DoubleExpression.java)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/DoubleExpressionTest.java)
  * *DoubleTriple* (38, 39)
     * Дополнительно реализуйте интерфейсы 
-      [DoubleExpression](java/expression/DoubleExpression.java) и
-      [TripleExpression](java/expression/TripleExpression.java)
-    * [Исходный код тестов](java/expression/DoubleTripleExpressionTest.java)
+      [DoubleExpression](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/DoubleExpression.java) и
+      [TripleExpression](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/TripleExpression.java)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/DoubleTripleExpressionTest.java)
 
 ### Домашнее задание 9. Игра m,n,k
 
@@ -160,8 +160,8 @@
 
 Исходный код тестов:
 
- * [MarkdownTest.java](java/markup/MarkdownTest.java)
- * [AbstractTest.java](java/markup/AbstractTest.java)
+ * [MarkdownTest.java](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/markup/MarkdownTest.java)
+ * [AbstractTest.java](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/markup/AbstractTest.java)
 
 Модификации
  * *HTML* (32, 33)
@@ -169,13 +169,13 @@
       * выделеный текст окружается тегом `em`;
       * сильно выделеный текст окружается тегом `strong`;
       * зачеркнутый текст окружается тегом `s`.
-    * [Исходный код тестов](java/markup/HtmlTest.java)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/markup/HtmlTest.java)
  * *BBCode* (34, 35)
     * Дополнительно реализуйте метод `toBBCode`, генерирующий [BBCode](https://en.wikipedia.org/wiki/BBCode)-разметку:
       * выделеный текст окружается тегом `i`;
       * сильно выделеный текст окружается тегом `b`;
       * зачеркнутый текст окружается тегом `s`.
-    * [Исходный код тестов](java/markup/BBCodeTest.java)
+    * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/markup/BBCodeTest.java)
  * *TexList*
     * Дополнительно реализуйте метод `toTeX`, генерирующий TeX-разметку:
       * выделеный текст заключается в `\emph{` и `}`;
