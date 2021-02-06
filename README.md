@@ -4,8 +4,16 @@ I'm studying on KT M3134 and here are all my homeworks, labs and etc.
 ### Algo
 - **First lab:** 
 
-*This laboratory contains problems that have solutions based on stack, deque, queue and some sorting algorithms*
+*This laboratory contains problems that have solutions based on some sorting algorithms and heaps*
 
 [Problems](https://codeforces.com/group/IcRBR8epox/contest/298374)
 
 [Solutions](https://github.com/semischastnoff/1-term-KT/tree/main/algo/1lab_heaps_sorts)
+
+- **Second lab:**
+
+*Problems based on stack, deque, queue and dsu algorithms*
+
+[Problems](https://codeforces.com/group/IcRBR8epox/contest/302601)
+
+[Solutions](https://github.com/semischastnoff/1-term-KT/tree/main/algo/2lab_stack_queue_dsu)
