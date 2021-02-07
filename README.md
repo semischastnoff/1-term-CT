@@ -26,6 +26,10 @@
 
 - [Решения](https://github.com/semischastnoff/1-term-KT/tree/main/algo/3lab_dynamics)
 
+## *Discrete Math*
+
+
+
 ## *Prog-Intro*
 
 ### Зачет: билет `BBCode parser`
