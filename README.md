@@ -1,5 +1,5 @@
-# First term KT
-*Bio:* I'm studying on KT M3134 and here are all my homeworks, labs and etc
+# First term CT
+*Bio:* I'm studying on CT M3134 and here are all my homeworks, labs and etc
 
 ## *Algo*
 #### Первая лабораторная:
