@@ -28,6 +28,10 @@
 
 ## *Prog-Intro*
 
+### Зачет: билет `BBCode parser`
+
+***[Решение](https://github.com/semischastnoff/1-term-KT/tree/main/prog-intro/bbCode)***
+
 ### Домашнее задание 13. Markdown to HTML
 
 Модификации
@@ -51,6 +55,8 @@
 
 
 ### Домашнее задание 12. Обработка ошибок
+
+* ***[Решение](https://github.com/semischastnoff/1-term-KT/tree/main/prog-intro/Exceptios_Parser_hw12)***
 
 Модификации
  * *Базовая*
@@ -82,6 +88,8 @@
 
 
 ### Домашнее задание 11. Разбор выражений
+
+* ***[Решение](https://github.com/semischastnoff/1-term-KT/tree/main/prog-intro/Expressions_Parser_11hw-prog/Normal)***
 
 Модификации
  * *Базовая*
@@ -116,6 +124,8 @@
 
 ### Домашнее задание 10. Выражения
 
+* ***[Решение](https://github.com/semischastnoff/1-term-KT/tree/main/prog-intro/Expressions_10hw-prog/Normal)***
+
 Модификации
  * *Базовая*
     * Реализуйте интерфейс [Expression](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/Expression.java)
@@ -124,6 +134,7 @@
  * *Triple* (32-35)
     * Дополнительно реализуйте интерфейс [TripleExpression](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/TripleExpression.java)
     * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/TripleExpressionTest.java)
+    * ***[Решение](https://github.com/semischastnoff/1-term-KT/tree/main/prog-intro/Expressions_10hw-prog/Triple)***
  * *Double* (36, 37)
     * Дополнительно реализуйте интерфейс [DoubleExpression](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/DoubleExpression.java)
     * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/expression/DoubleExpressionTest.java)
@@ -145,6 +156,7 @@
         * 3 очка за победу
         * 1 очко за ничью
         * 0 очков за поражение
+    * ***[Решение](https://github.com/semischastnoff/1-term-KT/tree/main/prog-intro/n%2Cm%2Ck-game_9hw-prog/src/game)***
  * *Multiplayer* (36, 37)
     * Добавьте поддержку значков `-` и `|`
     * Добавьте возможность игры для 3 и 4 игроков
@@ -162,6 +174,8 @@
 
  * [MarkdownTest.java](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/markup/MarkdownTest.java)
  * [AbstractTest.java](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/markup/AbstractTest.java)
+ 
+ * ***[Решение](https://github.com/semischastnoff/1-term-KT/tree/main/prog-intro/Paragraph_7hw-prog/norm)***
 
 Модификации
  * *HTML* (32, 33)
@@ -176,6 +190,7 @@
       * сильно выделеный текст окружается тегом `b`;
       * зачеркнутый текст окружается тегом `s`.
     * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/markup/BBCodeTest.java)
+    * ***[Решение](https://github.com/semischastnoff/1-term-KT/tree/main/prog-intro/Paragraph_7hw-prog/mod34-bbcode)***
  * *TexList*
     * Дополнительно реализуйте метод `toTeX`, генерирующий TeX-разметку:
       * выделеный текст заключается в `\emph{` и `}`;
@@ -207,6 +222,8 @@
 
 Откомпилированные тесты: [WordStatIndexTest.jar](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/wordStat/WordStatIndexTest.jar)
 
+* ***[Решение](https://github.com/semischastnoff/1-term-KT/tree/main/prog-intro/WordStatIndex_6hw-prog/Normal)***
+
 Модификации
  * *LineIndex*  (32, 33)
     * Вместо номеров вхождений во всем файле надо указывать
@@ -214,6 +231,7 @@
     * Класс должен иметь имя `WordStatLineIndex`
     * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/wordStat/WordStatLineIndexTest.java)
     * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/wordStat/WordStatLineIndexTest.jar)
+    * ***[Решение](https://github.com/semischastnoff/1-term-KT/tree/main/prog-intro/WordStatIndex_6hw-prog/LineIndex)***
  * *SortedLineIndex* (34, 35)
     * В выходном файле слова должны быть упорядочены в лексикографическом порядке
     * Вместо номеров вхождений во всем файле надо указывать
@@ -221,6 +239,7 @@
     * Класс должен иметь имя `WordStatSortedLineIndex`
     * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/wordStat/WordStatSortedLineIndexTest.java)
     * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/wordStat/WordStatSortedLineIndexTest.jar)
+    * ***[Решение](https://github.com/semischastnoff/1-term-KT/tree/main/prog-intro/WordStatIndex_6hw-prog/SortedLineIndex)***
  * *CountLineIndex*  (36, 37)
     * В выходном файле слова должны быть упорядочены по возрастанию числа
       вхождений, а при равном числе вхождений – по порядку первого вхождения
@@ -247,6 +266,8 @@
 Исходный код тестов:
 
 * [FastReverseTest.java](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/reverse/FastReverseTest.java)
+
+* ***[Решение](https://github.com/semischastnoff/1-term-KT/tree/main/prog-intro/Scanner_5hw-prog)***
 
 Откомпилированные тесты: [FastReverseTest.jar](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/reverse/FastReverseTest.jar)
 Модификации
@@ -285,6 +306,8 @@
 
 Откомпилированные тесты: [WordStatInputTest.jar](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/wordStat/WordStatInputTest.jar)
 
+* ***[Решение](https://github.com/semischastnoff/1-term-KT/tree/main/prog-intro/WordStat_4hw-prog/WordStatInput%20(custom%20Scanner))***
+
 Модификации
  * *InputPrefix* (32, 33)
     * Выходной файл должен содержать все различные префиксы длины 3
@@ -300,6 +323,7 @@
     * Класс должен иметь имя `WordStatInputShingles`
     * [Исходный код тестов](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/java/wordStat/WordStatInputShinglesTest.java)
     * [Откомпилированные тесты](http://www.kgeorgiy.info/git/geo/prog-intro-2020/src/branch/master/artifacts/wordStat/WordStatInputShinglesTest.jar)
+    * ***[Решение](https://github.com/semischastnoff/1-term-KT/tree/main/prog-intro/WordStat_4hw-prog/WordStatInputShingles)***
  * *WordsPrefix* (для 36, 37)
     * Выходной файл должен содержать все различные префиксы длины 3
       слов встречающихся во входном файле, в лексикографическом порядке.
