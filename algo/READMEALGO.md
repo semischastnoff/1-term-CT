@@ -3,7 +3,7 @@
 
 *Сортировки, куча, бинпоиск*
 
-- [Условия](https://codeforces.com/group/IcRBR8epox/contest/298374)
+- [Условия](https://github.com/semischastnoff/1-term-KT/blob/main/algo/Первая%20лабораторная.pdf)
 
 - [Решения](https://github.com/semischastnoff/1-term-KT/tree/main/algo/1lab_heaps_sorts)
 
@@ -11,7 +11,7 @@
 
 *Стеки, деки, очереди, СНМ*
 
-- [Условия](https://codeforces.com/group/IcRBR8epox/contest/302601)
+- [Условия](https://github.com/semischastnoff/1-term-KT/blob/main/algo/Вторая%20лабораторная.pdf)
 
 - [Решения](https://github.com/semischastnoff/1-term-KT/tree/main/algo/2lab_stack_queue_dsu)
 
@@ -19,6 +19,6 @@
 
 *Динамическое программирование*
 
-- [Условия](https://codeforces.com/group/IcRBR8epox/contest/306741)
+- [Условия](https://github.com/semischastnoff/1-term-KT/blob/main/algo/Третья%20лабораторная.pdf)
 
 - [Решения](https://github.com/semischastnoff/1-term-KT/tree/main/algo/3lab_dynamics)
